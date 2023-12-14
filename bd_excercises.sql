@@ -1,0 +1,12 @@
+SELECT * FROM exercises.Movies;
+ALTER TABLE Movies ADD (rating DECIMAL(3,1));
+CREATE TABLE Students (student_id INT, student_name VARCHAR(50), age INT, grade VARCHAR(2));
+DROP TABLE Students;
+CREATE TABLE Events ( event_id INT, event_name VARCHAR(100), date DATE, location VARCHAR(100));
+INSERT INTO Events(event_id, event_name, date) VALUES ( 1, 'sunrise', '2024-07-21');
+SELECT * FROM Events; 
+TRUNCATE TABLE Events;
+SELECT * FROM Events;
+CREATE TABLE Restaurants( resturant_id INT, name VARCHAR(50), cuisine VARCHAR(50), location VARCHAR(100));
+SELECT * FROM Restaurants;
+ALTER TABLE Restaurants RENAME TO DiningSpot;
